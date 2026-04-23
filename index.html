@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Prince Project</title>
+
     <style>
         body {
             font-family: Arial;
@@ -12,18 +13,40 @@
             align-items: center;
             height: 100vh;
         }
+
         .card {
             background: #161b22;
             padding: 30px;
             border-radius: 12px;
             text-align: center;
         }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #58a6ff;
+            color: white;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
-    <div class="card">
-        <h1>🚀 Prince</h1>
-        <p>Built using GitHub CLI + Copilot</p>
-    </div>
+
+<div class="card">
+    <h1>🚀 Prince</h1>
+    <p>Built using GitHub CLI + Copilot</p>
+
+    <button onclick="changeColor()">Click Me</button>
+</div>
+
+<script>
+function changeColor() {
+    document.body.style.background = "linear-gradient(135deg, #ff7b00, #ff0066)";
+}
+</script>
+
 </body>
 </html>
